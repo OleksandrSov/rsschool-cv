@@ -39,3 +39,27 @@ At the moment, I continue improving my practical skills as part of RS School.
 * Russian — Native
 * English — Intermediate
 * Portuguese — Intermediate
+
+## Code Example
+```javascript
+function countVowels(str) {
+  const vowels = 'aeiou';
+  let count = 0;
+
+  for (let char of str.toLowerCase()) {
+    if (vowels.includes(char)) {
+      count++;
+    }
+  }
+
+  return count;
+}
+
+console.log(countVowels("Hello World")); // 3
+
+```
+## Courses
+
+* Hillel IT School — Front End Basics
+* Yevhen Andrikanich — Web Page Layout Course
+* Alexander Luschenko — JavaScript Course
