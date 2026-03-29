@@ -3,22 +3,31 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>CV</title>
+	<title>CV Oleksandr Urusov</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header>
-		<h1>Oleksandr Urusov</h1>
+		<div class="header-content">
+			<div class="header-text">
+				<h1>Oleksandr Urusov</h1>
+				<h2>Junior Frontend Developer</h2>
+				<p class="location">Lisbon, Portugal</p>
+			</div>
+		</div>
+
+		<img src="img/hero.jpg" alt="Oleksandr Urusov photo" width="150">
 
 		<nav>
 			<ul>
 				<li><a href="#about">About</a></li>
 				<li><a href="#skills">Skills</a></li>
+				<li><a href="#code">Code</a></li>
+				<li><a href="#courses">Courses</a></li>
+				<li><a href="#languages">languages</a></li>
 				<li><a href="#contacts">Contacts</a></li>
 			</ul>
 		</nav>
-
-		<img src="img/hero.jpg" alt="photo" width="150">
 	</header>
 
 	<main>
@@ -33,10 +42,55 @@
 
 		<section id="skills">
 			<h2>Skills</h2>
+
+			<h3>Frontend:</h3>
 			<ul>
 				<li>HTML</li>
 				<li>CSS</li>
 				<li>JavaScript</li>
+			</ul>
+
+			<h3>Tools:</h3>
+			<ul>
+				<li>Git</li>
+				<li>GitHub</li>
+				<li>VS Code</li>
+				<li>Figma</li>
+			</ul>
+		</section>
+
+		<section id="code">
+			<h2>Code Example</h2>
+			<pre><code>function countVowels(str) {
+  const vowels = 'aeiou';
+  let count = 0;
+
+  for (let char of str.toLowerCase()) {
+    if (vowels.includes(char)) {
+      count++;
+    }
+  }
+
+  return count;
+}</code></pre>
+		</section>
+
+		<section id="courses">
+			<h2>Courses</h2>
+			<ul>
+				<li>Hillel IT School — Front End Basics</li>
+				<li>Yevhen Andrikanich — Web Page Layout Course</li>
+				<li>Alexander Luschenko — JavaScript Course</li>
+			</ul>
+		</section>
+
+		<section id="languages">
+			<h3>Languages:</h3>
+			<ul>
+				<li>Ukrainian — Native</li>
+				<li>Russian — Native</li>
+				<li>English — Intermediate</li>
+				<li>Portuguese — Intermediate</li>
 			</ul>
 		</section>
 
@@ -44,17 +98,21 @@
 			<h2>Contacts</h2>
 			<ul>
 				<li><a href="mailto:oleksandr.urusov@gmail.com">Email: oleksandr.urusov@gmail.com</a></li>
-				<li><a href="https://github.com/OleksandrSov">Github: OleksandrSov</a></li>
+				<li><a href="https://github.com/OleksandrSov">GitHub: OleksandrSov</a></li>
 				<li><a href="https://t.me/Alex_in_lisbon">Telegram: Alex_in_lisbon</a></li>
 			</ul>
 		</section>
 	</main>
 	
 	<footer>
-		<a href="https://github.com/OleksandrSov">GitHub</a>
-		<span>2026</span>
-		<a href="https://rs.school/courses/javascript-preschool-ru">RS School</a>
+		<p>
+			<a href="https://github.com/OleksandrSov">GitHub</a>
+			<span>2026</span>
+		</p>
+		
+		<a href="https://rs.school/courses/javascript-preschool-ru">
+			<img src="img/rs-school-logo.svg" width="60" alt="RS school logo">
+		</a>
 	</footer>
-	
 </body>
 </html>
